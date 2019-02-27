@@ -46,19 +46,29 @@
 
       <section class="jumbotron text-left">
         <div class="container">
-          <h1 class="jumbotron-heading">Examples of Time-Dependent SE Games</h1>
-          <p class="lead text-muted">
-            In all of our examples, we assume:
-            <ul> 
-              <li>The Evader's configuration space is a unit square, sometimes containing impenetrable and occluding obstacles. </li>
-              <li>The square is discretized on a $201 \times 201$ grid ($h = 0.005$).</li>
-              <li>The Evader's speed is uniform ($f(\boldsymbol{x}) = 1$) and the timestep is chosen according to the CFL stability condition: $\Delta t = h $.</li>
-              <li>The Evader's deadline for reaching the target is $T=4,$ but all Nash equilibrium controls lead to a much earlier arrival.</li>
-              <li>The cumulative observability is computed up to the arrival time $T_{\boldsymbol{a}}$ only.</li>
-            </ul>
-          </p>
+          <h1 class="jumbotron-heading">Examples of Time-Dependent Surveillance-Evasion Games</h1>
+          <div class="container bg-light">
+            <p>These examples are from a paper which has been submitted to <a href="http://cdc2019.ieeecss.org/">CDC 2019</a>. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View manuscript on Arxiv (disabled) &raquo;</a></p>
+            <!-- <p><a class="btn btn-secondary" href="#" role="button">Official publication goes here (disabled) &raquo;</a></p> -->
+          </div>
         </div>
       </section>
+      <div>
+        <p>
+          In all of our examples, we assume:
+          <ul> 
+            <li>The domain is a unit square, sometimes containing impenetrable and occluding obstacles. </li>
+            <li>The square is discretized on a $201 \times 201$ grid ($h = 0.005$).</li>
+            <li>The Evader's speed is uniform ($f(\boldsymbol{x}) = 1$) and the timestep is chosen according to the CFL stability condition: $\Delta t = h $.</li>
+            <li>The Evader's deadline for reaching the target is $T=4,$ but all Nash equilibrium controls lead to a much earlier arrival. (The cumulative observability is computed up to the arrival time $T_{\boldsymbol{a}}$ only.)</li>
+            <li>The magenta diamond is the Evader's starting location, and the green triangle is the Evader's target.
+            <li>Patrol trajectories shown in black.</li>
+            <li>The Evader's trajectories are shown in color.</li>
+            <li>Trajectories are superimposed on the expected pointwise observability $K_{\lambda}$.
+          </ul>
+        </p>
+      </div>
 
       <div class="album py-5 bg-light">
         <div class="container">
@@ -66,12 +76,14 @@
             <div class="col-md-6">
               <div class="card mb-6 shadow-sm">
                 <div class="card-body">
-                  <p class="card-text">Example 1: 
-                    <ul>
-                      <li>Two isotropic observers</li>
-                      <li>No obstacles</li>
-                    </ul>
-                  </p>
+                  <h4 class="card-text">Example 1:</h4> 
+                  <ul>
+                    <li>No obstacles</li>
+                    <li>Two patrol trajectories</li>
+                    <li>Isotropic sensor</li>
+                    <li>$\lambda_* = (0.67, 0.33)$</li>
+                    <li>$\theta_* = 1$</li>
+                  </ul>
                   <div class="embed-responsive embed-responsive-1by1">
                     <video controls class="embed-responsive-item">
                       <source src="movies/noobstacle.mp4" type="video/mp4">
@@ -83,12 +95,14 @@
             <div class="col-md-6">
               <div class="card mb-6 shadow-sm">
                 <div class="card-body">
-                  <p class="card-text">Example 2: 
-                    <ul>
-                      <li>Two isotropic observers</li>
-                      <li>One central obstacle</li>
-                    </ul>
-                  </p>
+                  <h4 class="card-text">Example 2:</h4> 
+                  <ul>
+                    <li>One  obstacle</li>
+                    <li>Two patrol trajectories</li>
+                    <li>Isotropic sensor</li>
+                    <li>$\lambda_* = (0.48, 0.52)$</li>
+                    <li>$\theta_* = (0.691, 0.309)$</li>
+                  </ul>
                   <div class="embed-responsive embed-responsive-1by1">
                     <video controls class="embed-responsive-item">
                       <source src="movies/obstacle.mp4" type="video/mp4">
@@ -101,12 +115,14 @@
             <div class="col-md-6">
               <div class="card mb-6 shadow-sm">
                 <div class="card-body">
-                  <p class="card-text">Example 3: 
-                    <ul>
-                      <li>Two anisotropic observers</li>
-                      <li>Three rectangular obstacles</li>
-                    </ul>
-                  </p>
+                  <h4 class="card-text">Example 3: </h4> 
+                  <ul>
+                    <li>Three rectangular obstacles</li>
+                    <li>Two patrol trajectories</li>
+                    <li>Sector-restricted sensor ($\alpha=2\pi/3$)</li>
+                    <li>$\lambda_* = (0.5, 0.5)$</li>
+                    <li>$\theta_* = (0.5, 0.5)$</li>
+                  </ul>
                   <div class="embed-responsive embed-responsive-1by1">
                     <video controls class="embed-responsive-item">
                       <source src="movies/figure8aniso_long.mp4" type="video/mp4">
@@ -118,12 +134,14 @@
             <div class="col-md-6">
               <div class="card mb-6 shadow-sm">
                 <div class="card-body">
-                  <p class="card-text">Example 4: 
-                    <ul>
-                      <li>Four anisotropic observers</li>
-                      <li>Maze-like obstacles</li>
-                    </ul>
-                  </p>
+                  <h4 class="card-text">Example 4: </h4> 
+                  <ul>
+                    <li>Maze-like domain</li>
+                    <li>Four different starting locations along same patrol trajectory</li>
+                    <li>Sector-restricted sensor ($\alpha=2\pi/3$)</li>
+                    <li>$\lambda_*=(0.077, 0.127, 0.452, 0.344)$</li>
+                    <li>$\theta_*=(0.592, 0.084, 0.145, 0.180)$</li>
+                  </ul>
                   <div class="embed-responsive embed-responsive-1by1">
                     <video controls class="embed-responsive-item">
                       <source src="movies/maze.mp4" type="video/mp4">
