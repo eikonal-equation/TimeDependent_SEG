@@ -7,7 +7,15 @@ You should have received a copy of the GNU General Public License along with thi
 --------------------------------------------
 # Manuscript
 
-The primary purpose in distributing this source code is to enable readers to reproduce the numerical results reported in the manuscript "Time-Dependent Surveillance-Evasion Games" by Elliot Cartee, Lexaio Lai, Qianli Song, and Alexander Vladimirsky. A pre-print of this article can be found on Arxiv [here](https://arxiv.org/abs/1903.01332).
+The primary purpose in distributing this source code is to enable readers to reproduce the numerical results reported in the manuscript "Time-Dependent Surveillance-Evasion Games" by Elliot Cartee, Lexaio Lai, Qianli Song, and Alexander Vladimirsky. A pre-print of this article can be found on Arxiv [here](https://arxiv.org/abs/1903.01332). 
+
+--------------------------------------------
+# Website
+
+In addition to the manuscript, more information about the project can also be found at:
+* [https://eikonal-equation.github.io/TimeDependent_SEG/index.html](https://eikonal-equation.github.io/TimeDependent_SEG/index.html).
+Animations of the examples in the manuscript can be found here:
+* [https://eikonal-equation.github.io/TimeDependent_SEG/examples.html](https://eikonal-equation.github.io/TimeDependent_SEG/examples.html).
 
 --------------------------------------------
 # Contributions / Acknowledgements
@@ -40,7 +48,7 @@ Assuming the libraries are linked, you should be able to compile the code and ru
 
 To compile, make sure you are in the folder /TimeDependent_SEG/ and use the command `make` from the command line.
 
-The four examples in the manuscript can be reproduced using the following commands:
+The four examples in the manuscript/website can be reproduced using the following commands:
 * To compile & run example 1 `NoObstacleTest()` (0 obstacles, 2 patrol trajectories, Omnidirectional sensor):
 ` make run TEST='1' `
 * To compile & run example 2 `ObstacleTest()` (1 central obstacle, 2 patrol trajectories, Omnidirectional sensor):
