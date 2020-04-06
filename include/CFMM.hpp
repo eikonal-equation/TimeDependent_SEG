@@ -50,7 +50,7 @@
 #define CFMM_HPP
 
 /** ------ Libraries ---------------------------------------------------------*/
-#include <boost/heap/binomial_heap.hpp>
+#include <boost/heap/fibonacci_heap.hpp>
 
 /** ------ Project-specific header files -------------------------------------*/
 #include "GlobalConfiguration.hpp"
@@ -97,8 +97,8 @@ class CFMM
     };
 
     /* Typedef Heap types to make it easier to read. */
-    typedef boost::heap::binomial_heap<CHeapGP, boost::heap::compare<compare_CHeapGP> > CFMMHeap_t;
-    typedef typename boost::heap::binomial_heap<CHeapGP, boost::heap::compare<compare_CHeapGP> >::handle_type handle_t;
+    typedef boost::heap::fibonacci_heap<CHeapGP, boost::heap::compare<compare_CHeapGP> > CFMMHeap_t;
+    typedef typename boost::heap::fibonacci_heap<CHeapGP, boost::heap::compare<compare_CHeapGP> >::handle_type handle_t;
 
     /* A shared pointer to a CTimeGrid object
     *  which contains all of the information (cost, speed, physical grid)

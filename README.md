@@ -40,7 +40,7 @@ If those libraries are installed elsewhere, you will have to modify the [Makefil
 The code uses the C++14 standard, and can be compiled using both gcc and icpc.
 
 The plotting scripts are in [jupyter notebooks](https://jupyter.org/).
-The Python code in the notebooks requires both numpy and matplotlib.
+The Python code in the notebooks requires [numpy](https://numpy.org/), [matplotlib](https://matplotlib.org/), and [ffmpeg](https://www.ffmpeg.org/).
 
 ## Running the code
 
